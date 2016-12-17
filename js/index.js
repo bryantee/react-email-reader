@@ -7,10 +7,11 @@ import EmailList from './components/email-list'
 import EMAILS from './emails'
 import ListContainer from './components/list-container'
 import EmailContainer from './components/email-container'
+import App from './components/app'
 
 const routes = (
   <Router history={hashHistory}>
-    <Route path="/:mailboxName">
+    <Route path="/:mailboxName" component={App}>
       <IndexRoute component={ListContainer} />
       <Route path=":emailId" component={EmailContainer} />
     </Route>
