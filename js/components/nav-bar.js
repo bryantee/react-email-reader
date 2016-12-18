@@ -6,7 +6,7 @@ export default function Navbar(props) {
       <nav>
         <div className="nav-wrapper blue-grey darken-4">
           <div className="brand-logo">
-            Read-ly
+            React Reader
           </div>
         </div>
       </nav>

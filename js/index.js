@@ -16,7 +16,7 @@ const routes = (
       <Route path=":emailId" component={EmailContainer} />
     </Route>
   </Router>
-)
+);
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(routes, document.getElementById('app'));

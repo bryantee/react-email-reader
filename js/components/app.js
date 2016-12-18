@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './nav-bar'
+import SidebarContainer from './sidebar-container'
 
 export default function App(props) {
   return (
     <div>
       <Navbar />
-      <div className="container">
-        {props.children}
-      </div>
+      <SidebarContainer />
+      {props.children}
     </div>
   )
 }
