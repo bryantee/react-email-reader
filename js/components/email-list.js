@@ -6,17 +6,20 @@ export default function EmailList(props) {
   const emails = Object.keys(props.emails).map((key) => {
     const email = props.emails[key]
     return (
-      <div>
-        <Link to={`${mailboxName}/${email.id}`}>
-          <h1>{email.title}</h1>
-        </Link>
-        <h2>{email.from}</h2>
-      </div>
+        <li className="collection-item avatar">
+          <Link to={`${mailboxName}/${email.id}`}>
+            <img className="circle" src="assets/images/bryan_cat.jpg" />
+            <span className="title">{email.title}</span>
+          </Link>
+          <p>{email.from}</p>
+        </li>
     );
   });
   return (
     <div>
-      {emails}
+      <ul className="collection">
+        {emails}
+      </ul>
     </div>
   )
 }

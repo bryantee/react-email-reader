@@ -1,10 +1,11 @@
 import React from 'react'
+import Navbar from './nav-bar'
 
 export default function App(props) {
   return (
     <div>
-      <h1>Readl-ly</h1>
-      <div>
+      <Navbar />
+      <div className="container">
         {props.children}
       </div>
     </div>
