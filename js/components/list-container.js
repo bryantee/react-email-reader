@@ -7,8 +7,7 @@ export default class ListContainer extends Component {
     let emails = EMAILS[this.props.params.mailboxName]
     return (
       <div>
-        <EmailList emails={emails} />
-        {this.props.children}
+        <EmailList emails={emails} mailbox={this.props.params.mailboxName} />
       </div>
     );
   }
