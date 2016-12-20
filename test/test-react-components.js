@@ -26,10 +26,15 @@ describe('Render React components', function() {
     result.props.children[0].props.children.props.children.should.equal(links[0]);
     result.props.children[1].props.children.props.children.should.equal(links[1]);
     result.props.children[2].props.children.props.children.should.equal(links[2]);
-
-
   });
-  it('Renders Navbar component');
+  it('Renders Navbar component', function() {
+    const title = "NAVBAR"
+    const renderer = TestUtils.createRenderer();
+    renderer.render(<Navbar title={title} />);
+    const result = renderer.getRenderOutput();
+    result.type.should.equal('nav');
+    result.props.children.props.children.props.children.should.equal(title);
+  });
   it('Renders Email component');
   it('Renders EmailList component');
 });

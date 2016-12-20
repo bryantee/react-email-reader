@@ -5,7 +5,7 @@ import SidebarContainer from './sidebar-container'
 export default function App(props) {
   return (
     <div>
-      <Navbar />
+      <Navbar title="React Reader"/>
       <SidebarContainer />
       {props.children}
     </div>
