@@ -12,7 +12,7 @@ export default function Sidebar(props) {
       );
   });
   return (
-    <ul id="slide-out" className="side-nav fixed">
+    <ul id="slide-out" className="side-nav">
       {links}
     </ul>
   );
