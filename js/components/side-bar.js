@@ -5,7 +5,7 @@ export default function Sidebar(props) {
   const links = Object.keys(props.links).map((link, index) => {
     return (
       <li>
-        <Link to={`${link}`}>
+        <Link to={`${link}`} key={index}>
           {link}
         </Link>
       </li>
